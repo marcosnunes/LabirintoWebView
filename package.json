@@ -1,0 +1,12 @@
+{
+  "name": "labirinto-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix ./Labirinto run dev --",
+    "dev:clean": "npm --prefix ./Labirinto run dev:clean --",
+    "build": "npm --prefix ./Labirinto run build --",
+    "build:android": "npm --prefix ./Labirinto run build:android --",
+    "lint": "npm --prefix ./Labirinto run lint --",
+    "preview": "npm --prefix ./Labirinto run preview --"
+  }
+}

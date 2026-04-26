@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:targetApi="33"
+        android:enableOnBackInvokedCallback="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Labirinto"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Labirinto">
+        <meta-data android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/game_services_project_id"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

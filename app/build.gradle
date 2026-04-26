@@ -1,0 +1,73 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()}
+}
+
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('D:\\Android\\keystore\\Labirinto\\keystore.jks')
+            storePassword '341347'
+            keyAlias 'key0'
+            keyPassword '341347'
+        }
+    }
+    namespace = 'com.labirinto.webview'
+    compileSdk = 37
+
+    defaultConfig {
+        applicationId = 'com.labirinto.webview'
+        minSdk = 24
+
+        versionCode = 5
+        versionName = '1.4'
+        targetSdk = 37
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Limit resources to specific languages to reduce APK size
+        resConfigs "en", "pt"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled = true
+            shrinkResources = true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    lint {
+        checkReleaseBuilds = true
+        abortOnError = false
+    }
+}
+
+dependencies {
+    // Core dependencies
+    implementation libs.androidx.core
+    implementation libs.androidx.appcompat
+    implementation libs.androidx.webkit
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+
+    implementation libs.play.services.games.v2
+
+    // Testing dependencies
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+}

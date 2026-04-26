@@ -1,0 +1,11 @@
+# Project exclude paths
+/.gradle/
+/app/build/
+/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/build/
+/app/release/
+*.jks
+*.keystore
+local.properties
+node_modules/
+dist/

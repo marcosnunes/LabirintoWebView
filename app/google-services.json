@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "932932784643",
+    "project_id": "labirinto-puzzle",
+    "storage_bucket": "labirinto-puzzle.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932932784643:android:f0ba7dbfe097bc1a66b436",
+        "android_client_info": {
+          "package_name": "com.labirinto.webview"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_hKqZhiCEza8irb8RnuUUJ8_SRvHfKdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
